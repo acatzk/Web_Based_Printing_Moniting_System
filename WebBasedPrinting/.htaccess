@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteRule ^login?$ login.php
+RewriteRule ^index?$ index.php
+RewriteRule ^profile?$ user_profile.php
+RewriteRule ^files?$ upload_print.php
+RewriteRule ^logout?$ logout.php
+
+RewriteRule ^profile/([0-9]+) update_profile.php?update=$1
+RewriteRule ^files/([0-9]+) print_file.php?print=$1
